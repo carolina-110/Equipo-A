@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,29 +12,51 @@
 </head>
 
 <body>
+
     <section class="container">
-        <div class="form-group">
-            <label for="formGroupExampleInput">velocidad</label>
-            <input type="text" class="form-control " id="velocidad" oninput="deshabilitar()">
+        <h1 class="title">Calculadora de Fórmulas Físicas</h1>
+        <p class="reglas"> </p>Introduce los valores que ya tienes para calcular el restante. </p>
+        <!-- Sección Velocidad -->
+        <div class="row">
+            <!-- Operaciones Velocidad -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Velocidad</h5>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">velocidad</label>
+                            <input type="text" class="form-control " id="velocidad" oninput="deshabilitar()">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">distancia</label>
+                            <input type="text" class="form-control " id="distancia" oninput="deshabilitar()">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput3">tiempo</label>
+                            <input type="text" class="form-control  " id="tiempo" oninput="deshabilitar()">
+                        </div>
+
+                        <button type="button" class="btn btn-primary" id="boton"
+                            onclick="imprimirRespuesta()">Calcular</button>
+                        <h3 id="respuesta"></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Resultado Velocidad -->
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <label for="formGroupExampleInput">Distancia:</label>
+                        <h5 class="card-title">XXXXX</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput2">distancia</label>
-            <input type="text" class="form-control " id="distancia" oninput="deshabilitar()">
-        </div>
-        <div class="form-group">
-            <label for="formGroupExampleInput3">tiempo</label>
-            <input type="text" class="form-control  " id="tiempo" oninput="deshabilitar()">
-        </div>
 
-        <button type="button" class="btn btn-primary" id="boton" onclick="imprimirRespuesta()" >Calcular</button>
-<h3 id="respuesta" ></h3>
-
-    </section>
-
-
-
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
