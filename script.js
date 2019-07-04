@@ -62,16 +62,12 @@ function aceleracion(){
     if (op4 === "") {
         resultado = (op6 - op5)/math.pow(op7,2)
         return resultado
-}
+}}
 
 
 function imprimirRespuesta() {
     document.getElementById('respuesta').innerHTML = velocidadF();
 }
-}
 
 
-// op4 = document.getElementById("aceleracion").value;
-// op5 = document.getElementById("vi").value;
-// op6 = document.getElementById("vf").value;
-// op7 = document.getElementById("time").value;
+
