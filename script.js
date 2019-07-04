@@ -1,5 +1,4 @@
-
-
+alert("Funciona");
 
 let respuesta;
 
@@ -69,7 +68,7 @@ function aceleracion(){
 function imprimirRespuesta() {
     document.getElementById('respuesta').innerHTML = velocidadF();
 }
-
+}
 
 
 // op4 = document.getElementById("aceleracion").value;
