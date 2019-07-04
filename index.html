@@ -33,6 +33,31 @@
 
 
 
+    <section class="container">
+        <div class="form-group">
+            <label for="formGroupExampleInput">Aceleracion</label>
+            <input type="text" class="form-control " id="aceleracion" oninput="deshabilitar()">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">velocidad inicial</label>
+            <input type="text" class="form-control " id="vi" oninput="deshabilitar()">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput3">Velocidad final</label>
+            <input type="text" class="form-control  " id="vf" oninput="deshabilitar()">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput4">Tiempo</label>
+            <input type="text" class="form-control " id="time" oninput="deshabilitar()">
+        </div>
+
+        <button type="button" class="btn btn-primary" id="boton" onclick="imprimirRespuesta()" >Calcular</button>
+<h3 id="respuesta" ></h3>
+
+    </section>
+
+
+
 
     <script src="script.js"></script>
 </body>
